@@ -5,8 +5,8 @@ $(document).ready(function(){
 	});
 	$("#addButton").click(function(){
 		$($(".replicate")[i++]).clone().insertBefore(".addBefore")
-		$($(".replicate")[i]).html("Hello"+i);
-		alert(i);
+		$($(".replicate")[i]).html('<p>Collaborator</p><nav><ul>  <!-- Unordered List --><li >Create Movie Structure</li></ul></nav>');
+		alert("Collaborator "+i+" added");
 	});
 });
 
