@@ -6,7 +6,7 @@ $(document).ready(function(){
 	$("#addButton").click(function(){
 		$($(".replicate")[i++]).clone().insertBefore(".addBefore")
 		$($(".replicate")[i]).html('<p>'+$("#textInput").val()+'</p><nav><ul>  <!-- Unordered List --><li >Create Movie Structure</li></ul></nav>');
-		alert("Collaborator "+i+" added");
+		alert("Collaborator "+i+" : "+$("#textInput").val()+" added");
 	});
 });
 
