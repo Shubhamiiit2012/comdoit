@@ -5,9 +5,12 @@ $(document).ready(function(){
 	});
 	$("#addButton").click(function(){
 		$($(".replicate")[i++]).clone().insertBefore(".addBefore")
-		$($(".replicate")[i]).html('<p>'+$("#textInput").val()+'</p><nav><ul>  <!-- Unordered List --><li >Create Movie Structure</li></ul></nav>');
+		$($(".replicate")[i]).html('<p>'+$("#textInput").val()+'</p><nav><ul>  <!-- Unordered List --><li >In progress.</li></ul></nav><input type="text" id="ListInput"><button id="listAddButton">Add</button>');
 		alert("Collaborator "+i+" : "+$("#textInput").val()+" added");
+		$("#textInput").val("");
 	});
+	
+	
 });
 
 
