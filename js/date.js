@@ -5,8 +5,7 @@ $(document).ready(function(){
 	});
 	$("#addButton").click(function(){
 		$($(".replicate")[i++]).clone().insertBefore(".addBefore")
-		$($(".replicate")[i]).html("Hello");
-		$($(".replicate")[i]).html("Hello");
+		$($(".replicate")[i]).html("Hello"+i);
 		alert(i);
 	});
 });
